@@ -98,7 +98,7 @@ export default function Home() {
     // If user is not connected to the Mumbai network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
     if (chainId !== 31337) {
-      window.alert("Change to mumbai network");
+      console.log("Change to mumbai network");
       throw new Error("Change network to mumbai network");
     }
 
